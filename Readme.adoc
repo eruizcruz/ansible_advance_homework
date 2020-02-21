@@ -51,3 +51,23 @@
 | roles/config-tower/tasks/workflow_template.yml | genrate workflow from `workflow.yml` file
 | roles/config-tower/tasks/post-config-tower.yml | any post config jobs
 |===
+
+First Commit 
+1. comment first line on this playbook
+/root/ansible_advance_homework/roles/config-tower/tasks/post-config-tower.yml
+
+2. remove comments on key file
+/root/.ssh/openstack.pem
+
+3. change syntax on ssh_key_data (add lookup)
+roles/config-tower/tasks/post-config-tower.yml
+
+4. correct syntax, change --job_template for --job-template, same for --instance_group
+roles/config-tower/tasks/job_template.yml
+
+5. Add Create project on playbook
+roles/config-tower/tasks/job_template.yml 
+
+6. Updated license in tower environment RH-01925956
+
+site-setup-workstation.yml and site-config-tower.yml executed successfully
