@@ -53,6 +53,7 @@
 |===
 
 First Commit 
+
 1. comment first line on this playbook
 /root/ansible_advance_homework/roles/config-tower/tasks/post-config-tower.yml
 
@@ -71,3 +72,16 @@ roles/config-tower/tasks/job_template.yml
 6. Updated license in tower environment RH-01925956
 
 site-setup-workstation.yml and site-config-tower.yml executed successfully
+
+Second Commit
+
+1. add '*' in the tag_filters
+roles/config-tower/vars/main.yml
+
+2. add become_method: sudo to play Tower Creds key file
+roles/config-tower/tasks/post-config-tower.yml
+
+3. Delete the inventory in tower and execute again site-config-tower.yml
+
+site-config-tower.yml executed successfully
+

@@ -1,4 +1,6 @@
-- hosts: workstation
+---
+- name: Provision QA environment
+  hosts: workstation
   become: yes
   roles:
     - osp-servers
