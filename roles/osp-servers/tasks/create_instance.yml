@@ -1,8 +1,10 @@
 ---
 
-# tasks file for osp.servers
+# tasks file for create-instance 
 
-- name: Create new server instances attaches network passes metadata 
+# - name: Create new server instances attaches network passes metadata 
+
+- name: Create a server instance "{{ item.value.name }}"
   os_server:
     cloud: ospcloud
     name: "{{ item.value.name }}"
@@ -21,7 +23,7 @@
   register: instanceip
 
 
-- name: Add floating IP
+- name: Add floating IP to "{{ item.value.name }}"
   os_floating_ip:
     cloud: ospcloud
     state: present
