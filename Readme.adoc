@@ -85,3 +85,13 @@ roles/config-tower/tasks/post-config-tower.yml
 
 site-config-tower.yml executed successfully
 
+Third Commit
+
+1. Convert the dictionary to a list to iterate more easily
+roles/osp-servers/vars/main.yml
+
+2. iterate osp_servers for instance creation
+roles/osp-servers/tasks/main.yml
+
+3. define new playbook to create the instances, attach the network and pass metadata
+roles/osp-servers/tasks/create_instance.yml
